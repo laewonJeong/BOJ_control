@@ -22,7 +22,6 @@ pip install requests beautifulsoup4 rich
 
 ```bash
 git clone <repository-url>
-cd baekjoon/boj_controller
 ```
 
 ## 사용법
