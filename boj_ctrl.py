@@ -289,25 +289,29 @@ def recommend_random(tier: str):
         "b2": "4",
         "b3": "3",
         "b4": "2",
+        "b5": "1",
         "s1": "10",
         "s2": "9",
         "s3": "8",
         "s4": "7",
+        "s5": "6",
         "g1": "15",
         "g2": "14",
         "g3": "13",
         "g4": "12",
+        "g5": "11",
         "p1": "20",
         "p2": "19",
         "p3": "18",
         "p4": "17",
+        "p5": "16",
         "d": "21",
         "r": "22",
     }
 
     if tier not in tier_codes:
         console.print(f"[red]Invalid tier: {tier}[/red]")
-        console.print(f"[yellow]Valid tiers: bronze(b1-b4), silver(s1-s4), gold(g1-g4), platinum(p1-p4), diamond(d), ruby(r), undefined[/yellow]")
+        console.print(f"[yellow]Valid tiers: bronze(b1-b5), silver(s1-s5), gold(g1-g5), platinum(p1-p5), diamond(d), ruby(r), undefined[/yellow]")
         return
 
     tier_code = tier_codes[tier]
