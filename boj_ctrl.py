@@ -244,6 +244,10 @@ def test_solution_file(problem_id: int, samples: list) -> bool:
 
             if actual_output == expected_output:
                 console.print(f"[bold green]Sample {i}: PASSED")
+                panel_expected = Panel(f"Expected:\n{expected_output}", border_style="green")
+                panel_actual = Panel(f"Actual:\n{actual_output}", border_style="green")
+                console.print(panel_expected)
+                console.print(panel_actual)
             else:
                 console.print(f"[bold red]Sample {i}: FAILED")
                 panel_expected = Panel(f"Expected:\n{expected_output}", border_style="yellow")
